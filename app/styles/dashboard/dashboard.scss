@@ -1,0 +1,298 @@
+@import "../tools/variables";
+@import "../tools/mixins";
+
+.main_dashboard{
+  font-family:$font-family-HelveticaNeue;
+  .dashboard{
+    .dashboard_header{
+      height: 56px;
+      background-color: $background-color-white;
+      .dashboard-header-left{
+        padding-top: 16px;
+        padding-bottom: 17px;
+        .dashboard-header-left-fill-1{
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+          float: left;
+        }
+        p{
+          font-size: 20px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: #798c9c;
+          margin: 0;
+          .dashboard-header-left-text-1{
+            margin-right:7px;
+          }
+          .dashboard-header-left-text-slash{
+            margin-right: 1px;
+          }
+          .dashboard-header-left-text-2{
+            color: $color-less-black;
+           }
+        }
+      }
+      .dashboard-header-right{
+        padding-top: 10px;
+        padding-bottom:10px;
+        .dashboard-header-right-dashb-help-buttons-area{
+          float: left;
+          width: 170px;
+          height: 36px;
+          border-radius: 3px;
+          border: solid 1px $color-border-grey-blue;
+          font-size: 16px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: $color-button-blue;
+          margin-right: 12px;
+          .dashboard-header-right-dashb-button{
+            float: left;
+            cursor: pointer;
+            padding-left: 15px;
+            margin-right: 12px;
+            padding-bottom: 10px;
+            padding-top: 8px;
+          }
+          .divide-line{
+            width: 1px;
+            height: 34px;
+            background-color: $color-border-grey-blue;
+            float: left;
+          }
+          .dashboard-header-right-help-button{
+            cursor: pointer;
+            padding-left: 14px;
+            margin-right: 13px;
+            padding-bottom: 10px;
+            padding-top: 8px;
+            float: left;
+          }
+        }
+        .dashboard-header-right-create-event-button{
+          width: 126px;
+          height: 36px;
+          border-radius: 3px;
+          background-color: $color-button-blue;
+          font-size: 16px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: $color-white;
+        }
+      }
+    }
+    .dashboard_content{
+      background-color:$content-background-color;
+      padding-top: 38px;
+      padding-left: 43px;
+      padding-right: 57px;
+      height: 743px;
+      .dashboard-content-title-and-create-button-area{
+        padding-left:13px;
+        padding-right:0;
+        .dashboard-content-ttile{
+          font-size: 18px;
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: $color-black;
+          vertical-align: middle;
+          display: inline-block;
+          margin-right: 15px;
+        }
+        .dashboard-content-create-event-button{
+          width: 123px;
+          height: 36px;
+          border-radius: 3px;
+          border: solid 1px $color-border-grey-blue;
+          font-size: 16px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: $color-button-blue;
+          background: transparent;
+          padding: 9px 16px;
+        }
+      }
+      .dashboard-content-events-thumbnails-area{
+        padding-left:2px;
+        margin-top: 21px;
+        .dashboard-content-lovebox-event-thumbnail{
+          /*max-height: 280px;*/
+          border-radius: 3px;
+          background-color: #ffffff;
+          box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+          .lovebox-event-thumbnail-image{
+            img{
+
+            }
+          }
+          .lovebox-event-thumbnail-description{
+            padding: 7px 19px 13px 19px;
+            font-size: 14px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.57;
+            letter-spacing: normal;
+            color: $color-less-black;
+            .lovebox-event-thumbnail-description-title{
+              font-size: 16px;
+              line-height: 1.38;
+            }
+            .lovebox-event-thumbnail-description-tickets-sold{
+              color:$color-sold-tickets;
+            }
+            .lovebox-event-thumbnail-description-profit{
+              font-weight: normal;
+            }
+          }
+        }
+        .dashboard-content-glastonbury-event-thumbnail{
+          /*max-height: 280px;*/
+          border-radius: 3px;
+          background-color: #ffffff;
+          box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+          .glastonbury-event-thumbnail-image{
+            img{
+
+            }
+          }
+          .glastonbury-event-thumbnail-description{
+            padding: 7px 19px 13px 19px;
+            font-size: 14px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.57;
+            letter-spacing: normal;
+            color: $color-less-black;
+            .glastonbury-event-thumbnail-description-title{
+              font-size: 16px;
+              line-height: 1.38;
+            }
+            .glastonbury-event-thumbnail-description-tickets-sold{
+              color: $color-sold-tickets;
+            }
+            .glastonbury-event-thumbnail-description-profit{
+              font-weight: normal;
+            }
+          }
+        }
+        .dashboard-content-tinthepark-event-thumbnail{
+          /*max-height: 280px;*/
+          border-radius: 3px;
+          background-color: #ffffff;
+          box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+          .tinthepark-event-thumbnail-image{
+            img{
+
+            }
+          }
+          .tinthepark-event-thumbnail-description{
+            padding: 7px 19px 13px 19px;
+            font-size: 14px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.57;
+            letter-spacing: normal;
+            color: $color-less-black;
+            .tinthepark-event-thumbnail-description-title{
+              font-size: 16px;
+              line-height: 1.38;
+            }
+            .tinthepark-event-thumbnail-description-tickets-sold{
+              color: $color-sold-tickets;
+            }
+            .tinthepark-event-thumbnail-description-profit{
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// responsive design start
+@include breakpoint(mobile-max) {
+  .no-padding-xs{
+    padding: 0!important;
+  }
+  .dashboard_header{
+    height: auto!important;
+    .dashboard-header-menu-and-title-area{
+      padding:14px 0 0 10px;
+      button{
+        width: 39px;
+        height: 39px;
+        border-radius: 3px;
+        background-color: $color-white;
+        border: solid 1px $color-border-grey-blue;
+        padding:0;
+        cursor: pointer;
+        margin-right:8px;
+        /*background-image: url('../../images/dashboard_header_menu_button_responsive.png');
+        background-position: center;
+        background-repeat:no-repeat;
+        -webkit-background-size:;
+        background-size:47%;8*/
+        img {
+          width: 17px;
+          height: 14px;
+          object-fit: contain;
+        }
+      }
+      .dashboard-header-left-text-2{
+        color: $color-black;
+        font-size: 20px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        vertical-align: middle;
+      }
+    }
+    .dashboard-header-right{
+      padding:8px 8px 12px 10px!important;
+      .dashboard-header-right-dashb-help-buttons-area{
+        margin-right:5px!important;
+      }
+    }
+  }
+  .main_dashboard {
+    .dashboard {
+      .dashboard_content{
+        padding: 15px!important;
+        height: auto!important;
+        .dashboard-content-events-thumbnails-area{
+          padding-left:0!important;
+          margin-top: 0!important;
+        }
+      }
+    }
+  }
+  .dashboard-content-thumbnails-area{
+    margin-bottom:15px;
+  }
+}
